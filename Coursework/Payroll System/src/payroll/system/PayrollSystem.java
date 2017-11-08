@@ -30,13 +30,15 @@ public class PayrollSystem {
     }
     public static int GetData(){
     Scanner GetData = new Scanner(System.in);
+    //System.in.useDelimter("[^A-Za-z]+");
     int choice;
          
        System.out.println(" Enter 1 to register a new employee\n Enter 2 to show Full Time Employees\n Enter 3 to show Part Time Employees");
-        choice =GetData.nextInt();
+       choice =GetData.nextInt();
        if (choice > 3  && choice < 0){
-       System.out.println("Mate Come on, Enter a number between 1-3");
+       throw new IllegalArgumentException("Please enter a number between 1-3 to choose from the menu");
        }
+       else {
        switch (choice)
         {
             case 1: System.out.println( "You entered 1");
@@ -54,6 +56,6 @@ public class PayrollSystem {
         
 }
 }
-      
+}
     
 

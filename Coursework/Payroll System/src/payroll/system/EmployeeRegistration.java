@@ -10,7 +10,8 @@ import java.util.Scanner;
  * @author w1545923
  */
 public class EmployeeRegistration {
-        String Input[];
+    
+    while (){
 
     Scanner Input= new Scanner (System.in);
     System.out.println("Please Enter First Name/s");
