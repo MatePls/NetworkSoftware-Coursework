@@ -11,9 +11,10 @@ import java.util.Scanner;
  */
 public class EmployeeRegistration {
     
-    while (){
 
+/*
     Scanner Input= new Scanner (System.in);
     System.out.println("Please Enter First Name/s");
-    
+  */  
 }
+

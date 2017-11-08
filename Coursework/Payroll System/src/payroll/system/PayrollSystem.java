@@ -25,17 +25,17 @@ public class PayrollSystem {
        GetData();
 
         
-         System.out.println("Mate it work");
+         System.out.println("Mate well done");
         
     }
     public static int GetData(){
-    Scanner GetData = new Scanner(System.in);
+    Scanner GetData = new Scanner(System.in); //Setting up to get user input on what to do
     //System.in.useDelimter("[^A-Za-z]+");
     int choice;
          
        System.out.println(" Enter 1 to register a new employee\n Enter 2 to show Full Time Employees\n Enter 3 to show Part Time Employees");
        choice =GetData.nextInt();
-       if (choice > 3  && choice < 0){
+       if (choice > 3  ){//&& choice < 0){
        throw new IllegalArgumentException("Please enter a number between 1-3 to choose from the menu");
        }
        else {
@@ -50,12 +50,13 @@ public class PayrollSystem {
             case 3: System.out.println("You entered 3");
             break;
             
-            default: System.out.println("Congrats you've messed up a simple number entry");
+            default: System.out.println("Congrats you've messed up simple number entry");
         }
         return choice ;
         
 }
 }
+    
 }
     
 
