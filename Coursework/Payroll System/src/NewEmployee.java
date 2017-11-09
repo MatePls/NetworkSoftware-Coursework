@@ -10,6 +10,8 @@
  */
 public class NewEmployee extends javax.swing.JFrame {
 
+    
+    
     /**
      * Creates new form NewEmployee
      */
@@ -241,14 +243,19 @@ public class NewEmployee extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    public ComboBoxListners();{
-    String GetTitle[];
-    inTitle  = new JComboBox ();
-    inTitle.addItemListener(new ItemListener());
-}
+     //This is to store the data enter into the first name, surname and address textfield into an array
+        
+
+      
+      
+       
+       
+    
+
     
     private void FirstNameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FirstNameFieldActionPerformed
-        
+        FirstNameField = new FirstNameField(100);
+        String FirstName = FirstNameField.getText();
     }//GEN-LAST:event_FirstNameFieldActionPerformed
 
     private void SurenameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SurenameFieldActionPerformed
@@ -257,9 +264,8 @@ public class NewEmployee extends javax.swing.JFrame {
 
     private void TitleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TitleActionPerformed
        
-        TitleJComboBox inTitle = new TitleJComboBox(TitleStrings);
-        inTitle.setSelectedIndect(3);
-        inTitle.addActionListner(this);
+        
+        
     }//GEN-LAST:event_TitleActionPerformed
 
     private void FinishButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FinishButtonActionPerformed
