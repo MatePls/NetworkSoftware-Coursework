@@ -241,6 +241,12 @@ public class NewEmployee extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    public ComboBoxListners();{
+    String GetTitle[];
+    inTitle  = new JComboBox ();
+    inTitle.addItemListener(new ItemListener());
+}
+    
     private void FirstNameFieldActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_FirstNameFieldActionPerformed
         
     }//GEN-LAST:event_FirstNameFieldActionPerformed
@@ -250,7 +256,7 @@ public class NewEmployee extends javax.swing.JFrame {
     }//GEN-LAST:event_SurenameFieldActionPerformed
 
     private void TitleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TitleActionPerformed
-        String[] TitleStrings = {"Mr","Ms","Mrs"};
+       
         TitleJComboBox inTitle = new TitleJComboBox(TitleStrings);
         inTitle.setSelectedIndect(3);
         inTitle.addActionListner(this);
@@ -291,6 +297,9 @@ public class NewEmployee extends javax.swing.JFrame {
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new NewEmployee().setVisible(true);
+            }
+            public void TitleInput(){
+                JComboBox.getSelectedItem();
             }
         });
     }
